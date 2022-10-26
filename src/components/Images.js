@@ -39,7 +39,7 @@ const Images = (props) => {
             isMounted = false;
             controller.abort();
         }
-    }, []) //images 
+    }, []) // missing dependencies axiosPrivate, location, navigate ?
 
     //adding images to dependency array causes a lot of requests to the backend and a ton of 304s
 
@@ -67,7 +67,7 @@ const Images = (props) => {
     const handleImageDelete = async(e,id) => {
         e.preventDefault()
 
-        const response = await axiosPrivate.delete('/images', {data:JSON.stringify({id})}, {
+        await axiosPrivate.delete('/images', {data:JSON.stringify({id})}, {
             headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${auth.accessToken}` },
             withCredentials: true
         })

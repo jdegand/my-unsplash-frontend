@@ -76,7 +76,7 @@ const Home = () => {
 
             if(validUrl){
 
-            const response = await axios.post('/images',
+            await axios.post('/images',
                 JSON.stringify({ label, url }),  {
                     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${auth.accessToken}` },
                     withCredentials: true
