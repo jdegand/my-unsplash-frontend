@@ -1,7 +1,7 @@
 <h1 align="center">My Unsplash Frontend</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="https://devchallenges.io/" target="_blank">Devchallenges.io</a>.
+   Solution for a challenge from  <a href="https://legacy.devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP" target="_blank">Devchallenges.io</a>.
 </div>
 
 ## Table of Contents
@@ -52,7 +52,7 @@
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://legacy.devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
 
 ## How To Use
 
