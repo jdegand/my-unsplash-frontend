@@ -29,12 +29,12 @@ nav {
 }
 
 .App {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-min-height: 100vh; 
-padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
 }
 
 .App-logo {
@@ -62,7 +62,8 @@ section {
   padding-bottom: 1rem;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: #000;
 }
 
@@ -70,24 +71,24 @@ input[type="text"],
 input[type="password"],
 button,
 textarea {
-font-size: 22px;
-padding: 0.25rem;
-border-radius: 0.5rem;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 label,
 button {
-margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 button {
-padding: 0.5rem;
-cursor: pointer;
-background: #3cb46c;
-color: #fff;
-font-weight: bolder;
-border: none;
-font-size: 24px;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: #3cb46c;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  font-size: 24px;
 }
 
 button:disabled {
@@ -108,7 +109,7 @@ li {
   bottom: -10px;
 }
 
-.instructions > svg {
+.instructions>svg {
   margin-right: 0.25rem;
 }
 
@@ -168,23 +169,23 @@ li {
   margin: 0 5px 2px 2px;
   cursor: pointer;
 }
- 
+
 .floatingGroup {
   position: relative;
 }
- 
+
 .floatingLabel {
   position: absolute;
   left: 0.5rem;
   transform: translateY(-50%);
   transition: bottom 250ms ease-in-out;
 }
- 
-input:focus + .floatingLabel {
+
+input:focus+.floatingLabel {
   bottom: -2rem;
 }
- 
-input:valid + .floatingLabel {
+
+input:valid+.floatingLabel {
   bottom: -2rem;
 }
 
@@ -193,8 +194,9 @@ input:valid + .floatingLabel {
   width: 235px;
   padding: 10px 0;
   border-radius: 0.5rem;
-  background: transparent; /* native input background prevents overlay from covering the input */
- }
+  background: transparent;
+  /* native input background prevents overlay from covering the input */
+}
 
 .searchBtn {
   background: transparent;
@@ -202,7 +204,7 @@ input:valid + .floatingLabel {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute; 
+  position: absolute;
   top: 0;
   right: 0;
   transform: translateY(-50%);
@@ -225,7 +227,7 @@ input:valid + .floatingLabel {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   padding: 50px;
   background: #fff;
   border: 2px solid;
@@ -251,7 +253,7 @@ input:valid + .floatingLabel {
 }
 
 .overlay {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   min-height: 100vh;
   z-index: 999;
 }
@@ -267,34 +269,15 @@ input:valid + .floatingLabel {
   text-align: right;
 }
 
-/*
-.image-grid {
-  margin: 0 auto;
-  padding: 0;
-  width: 80vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
-  grid-auto-rows: 10px;
-}
-*/
-
 .image-grid {
   columns: 3;
   column-gap: 20px;
   justify-content: center;
-  /*
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: masonry;
-  masonry-auto-flow: pack;
-  */
 }
 
 .image-item {
   position: relative;
   width: 400px;
-  /*height: 400px;
-  aspect-ratio: 1; */
   break-inside: avoid;
 }
 
@@ -354,13 +337,12 @@ input:valid + .floatingLabel {
 
   .image-grid {
     columns: 1;
-    /*grid-template-columns: 1fr;*/
   }
 
   .modal {
     width: 90vw;
     padding: 18px;
-    transform: translate(-55%,-50%);
+    transform: translate(-55%, -50%);
   }
 
   .modal h1 {
@@ -372,7 +354,6 @@ input:valid + .floatingLabel {
 
   .image-grid {
     columns: 2;
-    /*grid-template-columns: 1fr 1fr;*/
   }
 
   .image-item {
@@ -381,7 +362,7 @@ input:valid + .floatingLabel {
 
   .modal {
     width: 70vw;
-    transform: translate(-55%,-50%);
+    transform: translate(-55%, -50%);
   }
 }
 
@@ -389,7 +370,6 @@ input:valid + .floatingLabel {
 
   .image-grid {
     columns: 2;
-    /*grid-template-columns: 1fr 1fr;*/
   }
 
   .image-item {
